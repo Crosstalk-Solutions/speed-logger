@@ -6,6 +6,7 @@ After=network.target
 [Service]
 Type=oneshot
 User=pi
+WorkingDirectory=/home/pi/speed-logger
 ExecStart=/usr/bin/python3 /home/pi/speed-logger/main.py
 Environment=PYTHONUNBUFFERED=1
 
