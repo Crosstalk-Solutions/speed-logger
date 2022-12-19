@@ -1,0 +1,11 @@
+[Unit]
+Description=Crosstalk Speedtest Logger Service
+After=network.target
+
+
+[Service]
+Type=oneshot
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/speed-logger/main.py
+Environment=PYTHONUNBUFFERED=1
+

@@ -1,0 +1,8 @@
+[Unit]
+Description=Crosstalk Speedtest Logger Timer
+
+[Timer]
+OnCalendar=*:0,30
+
+[Install]
+WantedBy=timers.target
